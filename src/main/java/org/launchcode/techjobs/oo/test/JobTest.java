@@ -32,7 +32,7 @@ public class JobTest {
 
     @Test
     public void testSettingJobId(){
-        assertEquals(test_job, test_job2);
+        assertTrue(test_job.getId() != test_job2.getId());
     }
     @Test
     public void testJobConstructorSetsAllFields(){
@@ -46,6 +46,13 @@ public class JobTest {
     @Test
     public void testJobsForEquality(){
         assertFalse(test_job4.equals(test_job5));
+    }
+
+    @Test
+    public void testToString(){
+        char zeroIndex = test_job3.toString().charAt(0);
+        char lastIndex = test_job3.toString().charAt(test_job3.toString().length() - 1);
+        assertEquals(zeroIndex, lastIndex);
     }
 
 
