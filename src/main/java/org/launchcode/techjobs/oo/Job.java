@@ -71,7 +71,8 @@ public class Job {
                 "\n Employer: " + employer.getValue() +
                 "\n Location: " + location.getValue() +
                 "\n Position Type: " + positionType.getValue() +
-                "\n Core Competency: " + coreCompetency.getValue() ;
+                "\n Core Competency: " + coreCompetency.getValue() +
+                "\n";
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID

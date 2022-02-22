@@ -27,6 +27,13 @@ public abstract class JobField {
     }
 
     @Override
+    public String toString() {
+        return "JobField{" +
+                "value='" + value + '\'' +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(id);
     }
